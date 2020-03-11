@@ -1,0 +1,12 @@
+<Jumbo>
+    <h2>Welcome to this App</h2>
+    <LinkTo @route='about' class="button">About (under construction)</LinkTo>
+</Jumbo>
+
+<div class="rentals">
+    <ul class="results">
+        {{#each @model as |unit|}}
+        <li><Rental @rental={{unit}} /></li>
+        {{/each}}
+    </ul>
+</div>
